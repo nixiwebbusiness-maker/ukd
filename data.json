@@ -1,0 +1,108 @@
+{
+  "brand_name": "LUMINA",
+  "hero": {
+    "image": "https://res.cloudinary.com/dgoc9andq/image/upload/v1770389651/ips58e7amcd34sxy2a1h.png",
+    "subtitle": "WELCOME TO LUMINA",
+    "title": "LUMINA"
+  },
+  "services": {
+    "NAILS": [
+      {
+        "name": "Regular Manicure",
+        "price": "$60",
+        "desc": "Classic nail care, shaping, and polish.",
+        "img": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600"
+      },
+      {
+        "name": "Gel Manicure",
+        "price": "$80",
+        "desc": "Long-lasting gel polish cured under UV.",
+        "img": "https://images.unsplash.com/photo-1604654894610-df490c81726a?w=600"
+      },
+      {
+        "name": "Acrylic Powder Extension",
+        "price": "$140",
+        "desc": "Full set extensions for length and strength.",
+        "img": "https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=600"
+      }
+    ],
+    "RUSSIAN STYLE": [
+      {
+        "name": "Russian E-File Manicure",
+        "price": "$90",
+        "desc": "Precision cuticle work using electric file for a clean look.",
+        "img": "https://images.unsplash.com/photo-1610992015732-2449b0de0a86?w=600"
+      },
+      {
+        "name": "New Ritual",
+        "price": "$0.00",
+        "desc": "Experience details...",
+        "img": ""
+      }
+    ]
+  },
+  "full_menu": [
+    {
+      "cat": "Nails",
+      "items": [
+        {
+          "n": "Regular Manicure",
+          "p": "$60"
+        },
+        {
+          "n": "Gel Manicure",
+          "p": "$80"
+        },
+        {
+          "n": "Acrylic Full Set",
+          "p": "$140"
+        }
+      ]
+    },
+    {
+      "cat": "Pedicures",
+      "items": [
+        {
+          "n": "Regular Pedicure",
+          "p": "$80",
+          "d": "*Callus removal included"
+        },
+        {
+          "n": "Gel Pedicure",
+          "p": "$95"
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    "https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=600",
+    "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600",
+    "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600"
+  ],
+  "reviews": [
+    {
+      "name": "Emily R.",
+      "text": "The best Russian manicure in Santa Monica! Highly recommended."
+    },
+    {
+      "name": "Sarah M.",
+      "text": "Sasha's attention to detail is unmatched. Luxury experience."
+    },
+    {
+      "name": "faysal sario",
+      "text": "solan service is next level."
+    }
+  ],
+  "about_text": "Hi, I’m Sasha. I founded Lumina in Santa Monica to bring the best of Russian beauty techniques to California. With over 15 years of experience, we focus on precision, health, and high-end aesthetics.",
+  "logo": "https://res.cloudinary.com/dgoc9andq/image/upload/v1770385779/svckytrbetbnnlavjqgl.png",
+  "about": {
+    "text": "MY NAME IS FAYSAL SARIO.I AM WEBSITE DESIGNER.",
+    "image": "https://res.cloudinary.com/dgoc9andq/image/upload/v1770473043/wagnzv28guaxynsgowwq.webp"
+  },
+  "footer": {
+    "whatsapp": "03155075343",
+    "hours": "MONDAY=FRIDAY  10;00AM=10;0PM,SUNDAY          09;00AM=09;00PM",
+    "address": "attock city ",
+    "copyright": "you are lucky "
+  }
+}
