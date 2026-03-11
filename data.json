@@ -26,11 +26,6 @@
       "bannerWord2": "nhiii",
       "sectionTitle": "kuch nhii",
       "bannerImg": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773194166/lpq9gx5pxldxmb3hrwym.jpg"
-    },
-    {
-      "id": "ffff",
-      "name": "ffff",
-      "type": "menu"
     }
   ],
   "menuItems": [
@@ -315,7 +310,7 @@
   ],
   "settings": {
     "cartIcon": "🛒",
-    "brandName": "ukd",
+    "brandName": "saryo",
     "locTitle": "Location Info",
     "locDesc": "Visit us for an exceptional dining experience.",
     "locAddr": "12 Gulberg III, Lahore, Punjab, Pakistan",
@@ -323,13 +318,13 @@
     "locPhone": "+92 32 3500 0000",
     "locMap": "kamra attock",
     "locShow": true,
-    "footerBrand": "MAISON DORÉE",
+    "footerBrand": "saryo",
     "footerAddr": "12 Gulberg III, Lahore, Punjab, Pakistan",
     "footerYear": "2024",
     "footerT1": "7:00PM / 11:00PM",
     "footerT2": "7:00PM / 12:00AM",
-    "footerPhone": "+92 42 3500 0000",
-    "footerEmail": "hello@maisondoree.pk",
+    "footerPhone": "+92 32 3500 0000",
+    "footerEmail": "nixiweb.business@gmail.com",
     "seoTitle": "Maison Dorée – Fine Dining Restaurant",
     "seoLocation": "",
     "seoDesc": "",
