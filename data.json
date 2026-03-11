@@ -17,6 +17,20 @@
       "bannerWord2": "DEALS",
       "bannerImg": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773193975/kxx3wco3b2wrtphlmi1k.png",
       "sectionTitle": "Zing Deals"
+    },
+    {
+      "id": "kuch-nhiii",
+      "name": "kuch nhiii",
+      "type": "deal",
+      "bannerWord1": "kuch",
+      "bannerWord2": "nhiii",
+      "sectionTitle": "kuch nhii",
+      "bannerImg": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773194166/lpq9gx5pxldxmb3hrwym.jpg"
+    },
+    {
+      "id": "ffff",
+      "name": "ffff",
+      "type": "menu"
     }
   ],
   "menuItems": [
@@ -184,6 +198,18 @@
       "emoji": "🥭",
       "disc": "",
       "active": true
+    },
+    {
+      "id": 200,
+      "name": "asa",
+      "cat": "ffff",
+      "price": 777,
+      "oldPrice": 666,
+      "desc": "dishes",
+      "emoji": "🍽️",
+      "disc": "10",
+      "img": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773194234/rulqykyvwiicesalqvw8.png",
+      "active": true
     }
   ],
   "dealItems": [
@@ -322,5 +348,5 @@
     "seoHeadScripts": "",
     "seoBodyScripts": ""
   },
-  "nextId": 200
+  "nextId": 201
 }
