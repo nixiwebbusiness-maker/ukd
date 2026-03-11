@@ -270,7 +270,7 @@
     {
       "title": "Where Every Dish Tells a Story",
       "subtitle": "An intimate journey through refined flavours",
-      "img": "",
+      "img": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773194509/rmmucekwllcyhuyniqtd.webp",
       "btn1Label": "Explore Menu",
       "btn1Link": "#menu",
       "btn1Style": "filled",
@@ -281,7 +281,7 @@
     {
       "title": "Sacred Flavours of Iftar",
       "subtitle": "Handcrafted Ramzan deals — crafted with love",
-      "img": "",
+      "img": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773194520/gie0rm6xvrggc9bnkh4s.jpg",
       "btn1Label": "View Deals",
       "btn1Link": "#ramzan",
       "btn1Style": "filled",
@@ -290,20 +290,9 @@
       "btn2Style": "outline"
     },
     {
-      "title": "Create Unforgettable Evenings",
-      "subtitle": "Exclusive private dining for every occasion",
-      "img": "",
-      "btn1Label": "Reserve Now",
-      "btn1Link": "#location",
-      "btn1Style": "filled",
-      "btn2Label": "Our Menu",
-      "btn2Link": "#menu",
-      "btn2Style": "outline"
-    },
-    {
       "title": "The Art of Fine Cuisine",
       "subtitle": "Experience culinary mastery up close",
-      "img": "",
+      "img": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773194534/z8y8bglrhn9i7acgubtp.jpg",
       "btn1Label": "Our Creations",
       "btn1Link": "#menu",
       "btn1Style": "filled",
