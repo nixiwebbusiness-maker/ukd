@@ -1478,6 +1478,10 @@ document.getElementById('logoBtn').addEventListener('click',()=>{
 
 /* ── Password Modal ── */
 const ADMIN_PWD = 'faysal2059';
+const GITHUB_TOKEN = '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'; // GitHub Personal Access Token
+const GITHUB_OWNER = 'nixiwebbusiness-maker';
+const GITHUB_REPO  = 'ukd';
+const GITHUB_BRANCH = 'main';
 function showPwdModal(){
   document.getElementById('pwdInput').value='';
   document.getElementById('pwdErr').textContent='';
@@ -1564,55 +1568,43 @@ async function saveAndExitAdmin(){
   const saveBtn = document.getElementById('admSaveBtn');
   if(saveBtn){ saveBtn.disabled=true; saveBtn.textContent='💾 Saving...'; }
 
-  const GITHUB_OWNER = 'nixiwebbusiness-maker';
-  const GITHUB_REPO  = 'ukd';
-  const BRANCH       = 'main';
-
   try {
-    // Step 1: Get current SHA from GitHub directly
-    const shaRes = await fetch(
-      `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data.json?ref=${BRANCH}&t=${Date.now()}`
-    );
-    const shaData = await shaRes.json();
-    const sha = shaData.sha || null;
+    const REPO = 'nixiwebbusiness-maker/ukd';
+    const API  = `https://api.github.com/repos/${REPO}/contents/data.json`;
+    const AUTH = { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' };
 
-    // Step 2: Encode data as base64
+    // Step 1: Get SHA
+    const shaRes  = await fetch(API, { headers: AUTH });
+    const shaData = await shaRes.json();
+    if(!shaData.sha){ throw new Error(shaData.message || 'SHA fetch failed'); }
+
+    // Step 2: Encode data
     const dataObj = {
-      categories:  DB.categories,
-      menuItems:   DB.menuItems,
-      dealItems:   DB.dealItems,
-      heroSlides:  DB.heroSlides,
-      socialLinks: DB.socialLinks,
-      settings:    DB.settings,
-      nextId:      nextId
+      categories: DB.categories, menuItems: DB.menuItems,
+      dealItems:  DB.dealItems,  heroSlides: DB.heroSlides,
+      socialLinks: DB.socialLinks, settings: DB.settings, nextId: nextId
     };
     const b64 = btoa(unescape(encodeURIComponent(JSON.stringify(dataObj, null, 2))));
 
-    // Step 3: Send to api/update
-    const res = await fetch('/api/update', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ password: ADMIN_PWD, content: b64, sha })
+    // Step 3: Push directly to GitHub
+    const putRes = await fetch(API, {
+      method: 'PUT', headers: AUTH,
+      body: JSON.stringify({ message: 'Admin update', content: b64, sha: shaData.sha })
     });
+    const putData = await putRes.json();
+    if(!putRes.ok){ throw new Error(putData.message || 'Push failed'); }
 
-    const result = await res.json();
+    showToast('✓ Saved! Reload ho raha hai...');
+    setTimeout(()=>{ window.location.reload(); }, 2000);
+    return;
 
-    if(result.success){
-      showToast('✓ Saved! Page reload ho raha hai...');
-      setTimeout(()=>{ window.location.reload(); }, 2000);
-      return;
-    } else {
-      showToast('⚠️ Save failed: ' + (result.error||'Unknown error'));
-      console.error('Save error:', result);
-    }
   } catch(e){
-    showToast('⚠️ Network error: ' + e.message);
+    showToast('⚠️ Error: ' + e.message);
     console.error(e);
   } finally {
     if(saveBtn){ saveBtn.disabled=false; saveBtn.textContent='💾 Save Changes'; }
   }
 
-  // Close admin & apply to site (if save failed)
   _dbSnapshot = null;
   document.getElementById('adminPanel').classList.remove('open');
   document.body.style.overflow='';
@@ -2355,10 +2347,7 @@ window.addEventListener('scroll',()=>{
 async function init(){
   // Try GitHub raw URL first (always latest, no cache)
   // Then fallback to local /data.json
-  const GITHUB_OWNER = 'nixiwebbusiness-maker';
-  const GITHUB_REPO  = 'ukd';
-  const BRANCH       = 'main';
-  const RAW_URL = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}/data.json?t=${Date.now()}`;
+  const RAW_URL = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${GITHUB_BRANCH}/data.json?t=${Date.now()}`;
 
   async function tryLoad(url){
     const res = await fetch(url, {cache:'no-store'});
