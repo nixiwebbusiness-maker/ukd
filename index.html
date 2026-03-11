@@ -791,8 +791,7 @@ footer{background:#080706;border-top:1px solid rgba(201,168,76,.1);padding:60px 
           <p class="adm-card-desc">Flaticon ya kisi bhi site se icon URL paste karein. Default: 🛒 emoji.</p>
           <label class="adm-lbl" style="margin-top:12px;">Icon Image URL (Flaticon / PNG / SVG)</label>
           <div style="display:flex;gap:10px;margin-top:8px;">
-            <input class="adm-inp" id="b-cart-icon" placeholder="https://cdn-icons-png.flaticon.com/512/..." style="flex:1;">
-            <button class="ab ab-gold" onclick="applyCartIcon()">Apply</button>
+            <input class="adm-inp" id="b-cart-icon" placeholder="https://cdn-icons-png.flaticon.com/512/..." style="flex:1;" oninput="DB.settings.cartIcon=this.value||'🛒';applyCartIcon()">
           </div>
           <div style="margin-top:14px;display:flex;align-items:center;gap:12px;">
             <span class="adm-lbl">Preview:</span>
@@ -804,7 +803,7 @@ footer{background:#080706;border-top:1px solid rgba(201,168,76,.1);padding:60px 
           <div class="adm-card-label">🌐 Browser Favicon</div>
           <p class="adm-card-desc" style="margin-bottom:10px;">URL paste karein ya upload karein — save hone ke baad favicon apply hoga.</p>
           <div style="display:flex;gap:8px;margin-top:6px;">
-            <input class="adm-inp" id="b-favicon-url" placeholder="https://... favicon URL" style="flex:1;" oninput="previewFaviconUrl(this.value)">
+            <input class="adm-inp" id="b-favicon-url" placeholder="https://... favicon URL" style="flex:1;" oninput="DB.settings.faviconUrl=this.value;previewFaviconUrl(this.value)">
             <label class="ab ab-out ab-sm" style="cursor:pointer;white-space:nowrap;">📁 Upload<input type="file" accept="image/*" style="display:none;" onchange="uploadToCloudinary(this,'b-favicon-url','b-favicon-img','b-favicon-preview',v=>{DB.settings.faviconUrl=v;previewFaviconUrl(v);})"></label>
           </div>
           <div id="b-favicon-preview" style="margin-top:10px;display:none;"><img id="b-favicon-img" style="width:32px;height:32px;border-radius:4px;border:1px solid rgba(201,168,76,.3);object-fit:contain;"></div>
@@ -814,8 +813,7 @@ footer{background:#080706;border-top:1px solid rgba(201,168,76,.1);padding:60px 
         <div class="adm-card" style="margin-top:20px;">
           <div class="adm-card-label">✏️ Brand Name</div>
           <p class="adm-card-desc">Website title aur nav mein dikhne wala naam.</p>
-          <input class="adm-inp" id="b-name" value="Maison Dorée" style="margin-top:10px;">
-          <button class="ab ab-gold" style="margin-top:12px;" onclick="applyBranding()">Update Branding</button>
+          <input class="adm-inp" id="b-name" style="margin-top:10px;" oninput="DB.settings.brandName=this.value;applyBranding()">
         </div>
       </div>
 
@@ -894,21 +892,21 @@ footer{background:#080706;border-top:1px solid rgba(201,168,76,.1);padding:60px 
         <div class="adm-card">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
             <label class="adm-card-label" style="margin:0;">Show Section</label>
-            <label class="tog"><input type="checkbox" id="loc-show" checked><span class="tog-sl"></span></label>
+            <label class="tog"><input type="checkbox" id="loc-show" onchange="DB.settings.locShow=this.checked"><span class="tog-sl"></span></label>
           </div>
-          <div class="adm-fg"><label class="adm-lbl">Section Title</label><input class="adm-inp" id="loc-title" value="Location Info"></div>
-          <div class="adm-fg"><label class="adm-lbl">Description</label><textarea class="adm-ta" id="loc-desc">Visit us for an exceptional dining experience in a warm, modern, welcoming environment.</textarea></div>
+          <div class="adm-fg"><label class="adm-lbl">Section Title</label><input class="adm-inp" id="loc-title" oninput="DB.settings.locTitle=this.value"></div>
+          <div class="adm-fg"><label class="adm-lbl">Description</label><textarea class="adm-ta" id="loc-desc" oninput="DB.settings.locDesc=this.value"></textarea></div>
           <div class="adm-fg-2">
-            <div class="adm-fg"><label class="adm-lbl">Address (shown in section)</label><input class="adm-inp" id="loc-addr" value="12 Gulberg III, Lahore, Punjab, Pakistan"></div>
-            <div class="adm-fg"><label class="adm-lbl">Hours</label><input class="adm-inp" id="loc-hours" value="Mon–Thu 7PM–11PM · Fri–Sat 7PM–12AM"></div>
+            <div class="adm-fg"><label class="adm-lbl">Address (shown in section)</label><input class="adm-inp" id="loc-addr" oninput="DB.settings.locAddr=this.value"></div>
+            <div class="adm-fg"><label class="adm-lbl">Hours</label><input class="adm-inp" id="loc-hours" oninput="DB.settings.locHours=this.value"></div>
           </div>
-          <div class="adm-fg"><label class="adm-lbl">Contact / Phone</label><input class="adm-inp" id="loc-phone" value="+92 42 3500 0000"></div>
+          <div class="adm-fg"><label class="adm-lbl">Contact / Phone</label><input class="adm-inp" id="loc-phone" oninput="DB.settings.locPhone=this.value"></div>
           <div class="adm-fg">
             <label class="adm-lbl">Map Search Query (Google Maps)</label>
-            <input class="adm-inp" id="loc-map" value="12 Gulberg III, Lahore, Pakistan">
+            <input class="adm-inp" id="loc-map" oninput="DB.settings.locMap=this.value">
             <span style="font-size:11px;color:var(--text-muted);margin-top:4px;">Enter your full address — map will update automatically</span>
           </div>
-          <button class="ab ab-gold" style="margin-top:8px;" onclick="applyLocation()">Update Location</button>
+          
         </div>
       </div>
 
@@ -918,20 +916,20 @@ footer{background:#080706;border-top:1px solid rgba(201,168,76,.1);padding:60px 
 
         <div class="adm-card" style="margin-bottom:20px;">
           <div class="adm-card-label">Footer Info</div>
-          <div class="adm-fg" style="margin-top:12px;"><label class="adm-lbl">Brand Name (Footer)</label><input class="adm-inp" id="ft-brand" value="MAISON DORÉE"></div>
+          <div class="adm-fg" style="margin-top:12px;"><label class="adm-lbl">Brand Name (Footer)</label><input class="adm-inp" id="ft-brand" oninput="DB.settings.footerBrand=this.value"></div>
           <div class="adm-fg-2">
-            <div class="adm-fg"><label class="adm-lbl">Footer Address</label><input class="adm-inp" id="ft-addr" value="12 Gulberg III, Lahore, Punjab, Pakistan"></div>
-            <div class="adm-fg"><label class="adm-lbl">Copyright Year</label><input class="adm-inp" id="ft-year" value="2024"></div>
+            <div class="adm-fg"><label class="adm-lbl">Footer Address</label><input class="adm-inp" id="ft-addr" oninput="DB.settings.footerAddr=this.value"></div>
+            <div class="adm-fg"><label class="adm-lbl">Copyright Year</label><input class="adm-inp" id="ft-year" oninput="DB.settings.footerYear=this.value"></div>
           </div>
           <div class="adm-fg-2">
-            <div class="adm-fg"><label class="adm-lbl">Mon–Thu Timing</label><input class="adm-inp" id="ft-t1" value="7:00PM / 11:00PM"></div>
-            <div class="adm-fg"><label class="adm-lbl">Fri–Sat Timing</label><input class="adm-inp" id="ft-t2" value="7:00PM / 12:00AM"></div>
+            <div class="adm-fg"><label class="adm-lbl">Mon–Thu Timing</label><input class="adm-inp" id="ft-t1" oninput="DB.settings.footerT1=this.value"></div>
+            <div class="adm-fg"><label class="adm-lbl">Fri–Sat Timing</label><input class="adm-inp" id="ft-t2" oninput="DB.settings.footerT2=this.value"></div>
           </div>
           <div class="adm-fg-2">
-            <div class="adm-fg"><label class="adm-lbl">Contact Phone</label><input class="adm-inp" id="ft-phone" value="+92 42 3500 0000"></div>
-            <div class="adm-fg"><label class="adm-lbl">Email</label><input class="adm-inp" id="ft-email" value="hello@maisondoree.pk"></div>
+            <div class="adm-fg"><label class="adm-lbl">Contact Phone</label><input class="adm-inp" id="ft-phone" oninput="DB.settings.footerPhone=this.value"></div>
+            <div class="adm-fg"><label class="adm-lbl">Email</label><input class="adm-inp" id="ft-email" oninput="DB.settings.footerEmail=this.value"></div>
           </div>
-          <button class="ab ab-gold" onclick="applyFooter()">Update Footer</button>
+          
         </div>
 
         <div class="adm-card">
@@ -954,21 +952,21 @@ footer{background:#080706;border-top:1px solid rgba(201,168,76,.1);padding:60px 
 
           <div class="adm-fg">
             <label class="adm-lbl">Site Title (Browser Tab + Google)</label>
-            <input class="adm-inp" id="seo-title" placeholder="e.g. Maison Dorée – Fine Dining in Lahore">
+            <input class="adm-inp" id="seo-title" oninput="DB.settings.seoTitle=this.value" placeholder="e.g. Maison Dorée – Fine Dining in Lahore">
           </div>
           <div class="adm-fg">
             <label class="adm-lbl">Location / City</label>
-            <input class="adm-inp" id="seo-location" placeholder="e.g. Lahore, Pakistan">
+            <input class="adm-inp" id="seo-location" oninput="DB.settings.seoLocation=this.value" placeholder="e.g. Lahore, Pakistan">
           </div>
           <div class="adm-fg">
             <label class="adm-lbl">Meta Description <span id="seo-desc-count" style="color:var(--text-muted);font-size:10px;">0/160 chars</span></label>
-            <textarea class="adm-ta" id="seo-desc" rows="3" maxlength="160" oninput="document.getElementById('seo-desc-count').textContent=this.value.length+'/160 chars'" placeholder="e.g. Maison Dorée – Premium fine dining restaurant in Lahore. Authentic cuisine, luxury ambiance, best deals."></textarea>
+            <textarea class="adm-ta" id="seo-desc" rows="3" maxlength="160" oninput="DB.settings.seoDesc=this.value;document.getElementById('seo-desc-count').textContent=this.value.length+'/160 chars'" placeholder="e.g. Maison Dorée – Premium fine dining restaurant in Lahore. Authentic cuisine, luxury ambiance, best deals."></textarea>
           </div>
           <div class="adm-fg">
             <label class="adm-lbl">Keywords <span style="color:var(--text-muted);font-size:10px;">(comma separated)</span></label>
-            <textarea class="adm-ta" id="seo-keywords" rows="3" placeholder="e.g. restaurant lahore, fine dining, best food lahore, maison doree"></textarea>
+            <textarea class="adm-ta" id="seo-keywords" oninput="DB.settings.seoKeywords=this.value" rows="3" placeholder="e.g. restaurant lahore, fine dining, best food lahore, maison doree"></textarea>
           </div>
-          <button class="ab ab-gold" onclick="applySEO()">Apply SEO Tags</button>
+          
         </div>
 
         <!-- Scripts -->
@@ -978,13 +976,13 @@ footer{background:#080706;border-top:1px solid rgba(201,168,76,.1);padding:60px 
 
           <div class="adm-fg">
             <label class="adm-lbl">&lt;head&gt; Scripts <span style="color:var(--text-muted);font-size:10px;">(Google Search Console, Meta tags, etc.)</span></label>
-            <textarea class="adm-ta adm-code" id="seo-head-scripts" rows="6" placeholder='e.g. &lt;meta name="google-site-verification" content="XXXXXX" /&gt;&#10;&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"&gt;&lt;/script&gt;'></textarea>
+            <textarea class="adm-ta adm-code" id="seo-head-scripts" oninput="DB.settings.seoHeadScripts=this.value" rows="6" placeholder='e.g. &lt;meta name="google-site-verification" content="XXXXXX" /&gt;&#10;&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"&gt;&lt;/script&gt;'></textarea>
           </div>
           <div class="adm-fg" style="margin-top:16px;">
             <label class="adm-lbl">&lt;body&gt; Scripts <span style="color:var(--text-muted);font-size:10px;">(Facebook Pixel, Live Chat, etc.)</span></label>
-            <textarea class="adm-ta adm-code" id="seo-body-scripts" rows="6" placeholder="e.g. Facebook Pixel code, Crisp chat script, etc."></textarea>
+            <textarea class="adm-ta adm-code" id="seo-body-scripts" oninput="DB.settings.seoBodyScripts=this.value" rows="6" placeholder="e.g. Facebook Pixel code, Crisp chat script, etc."></textarea>
           </div>
-          <button class="ab ab-gold" style="margin-top:4px;" onclick="applyScripts()">Apply Scripts</button>
+          
           <p style="font-size:11px;color:var(--text-muted);margin-top:12px;letter-spacing:.5px;">⚠️ Scripts apply karne ke baad page reload hoga.</p>
         </div>
       </div>
@@ -1563,8 +1561,6 @@ function collectAllAdminFields(){
 }
 
 async function saveAndExitAdmin(){
-  collectAllAdminFields();
-
   const saveBtn = document.getElementById('admSaveBtn');
   if(saveBtn){ saveBtn.disabled=true; saveBtn.textContent='💾 Saving...'; }
 
@@ -1760,7 +1756,7 @@ function applyFavicon(){
   showToast('Favicon applied!');
 }
 function applyBranding(){
-  const name=document.getElementById('b-name').value.trim()||'Maison Dorée';
+  const name=document.getElementById('b-name')?document.getElementById('b-name').value.trim()||'Maison Dorée':DB.settings.brandName;
   DB.settings.brandName=name;
   const parts=name.split(' ');
   document.getElementById('logoBtn').innerHTML=parts.length>1
