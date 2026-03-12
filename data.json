@@ -53,7 +53,7 @@
   },
   "hero": {
     "title": "",
-    "subtitle": "Experience Ultimate Luxury",
+    "subtitle": "WELCOME OUR RESTAURANT ",
     "images": [
       "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1920&h=1080&fit=crop",
       "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920&h=1080&fit=crop",
@@ -66,20 +66,6 @@
         "label": "deals now",
         "link": "#deals",
         "position": "center",
-        "style": "filled"
-      },
-      {
-        "id": 2,
-        "label": "Our Menu",
-        "link": "#menu",
-        "position": "bottom-right",
-        "style": "filled"
-      },
-      {
-        "id": 3,
-        "label": "location ",
-        "link": "location",
-        "position": "bottom-left",
         "style": "filled"
       }
     ]
