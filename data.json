@@ -189,6 +189,10 @@
         {
           "n": "Milkshake",
           "p": "Rs. 450"
+        },
+        {
+          "n": "gg",
+          "p": "$99"
         }
       ]
     }
@@ -236,8 +240,8 @@
   "footer": {
     "whatsapp": "+1234567890",
     "hours": "Mon-Sun: 9AM - 9PM",
-    "address": "123 Luxury Lane, Beverly Hills, CA 90210",
-    "copyright": "© 2024 webnixi. All rights reserved.",
+    "address": "attock city",
+    "copyright": "© 2026 ukd. All rights reserved.",
     "social_links": [
       {
         "name": "Yelp",
@@ -264,10 +268,10 @@
   "location_info": {
     "enabled": true,
     "title": "Location Info",
-    "description": "Visit us for expert beauty services in a clean, modern, and welcoming environment. We can't wait to see you!",
-    "address": "123 Beauty Lane, City",
+    "description": "welcoming environment. We can't wait to see you!",
+    "address": "attock city",
     "hours": "Mon-Sat 9am",
-    "map_query": "123 Beauty Lane, Beverly Hills, CA"
+    "map_query": "attock city "
   },
   "section_titles": {
     "menu": "The Menu",
@@ -282,24 +286,14 @@
   ],
   "nav_items": [
     {
-      "id": "experience",
-      "label": "Experience",
-      "section": "experience"
+      "id": "nav_1773293212699",
+      "label": "deals",
+      "section": "deals "
     },
     {
-      "id": "menu",
-      "label": "Menu",
+      "id": "nav_1773293213011",
+      "label": "menu",
       "section": "menu"
-    },
-    {
-      "id": "about",
-      "label": "About",
-      "section": "about"
-    },
-    {
-      "id": "gallery",
-      "label": "Gallery",
-      "section": "gallery"
     }
   ],
   "deals_sections": [
@@ -353,6 +347,29 @@
           "originalPrice": 749,
           "discountedPrice": 649,
           "cardColor": "#9a1010"
+        }
+      ]
+    },
+    {
+      "id": 1773293295618,
+      "title": "zing deal ",
+      "subtitle": "SECTION",
+      "bannerBg": "#1a1400",
+      "titleColor": "#c8a200",
+      "subtitleBg": "#2a2200",
+      "subtitleColor": "#c8a200",
+      "bannerImage": "",
+      "bannerEmoji": "🍽️",
+      "deals": [
+        {
+          "id": 1773293326410,
+          "name": "new pr",
+          "subtitle": "jul",
+          "icon": "",
+          "image": "",
+          "originalPrice": 999,
+          "discountedPrice": 799,
+          "cardColor": "#c88000"
         }
       ]
     }
