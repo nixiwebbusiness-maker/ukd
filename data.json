@@ -1,6 +1,6 @@
 {
   "brand_name": "ukd",
-  "favicon": "",
+  "favicon": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773294156/o4vwt1bh4dj025na6nq1.png",
   "logo": "",
   "announcement": {
     "enabled": true,
@@ -313,7 +313,7 @@
           "name": "Double Pizza Roll",
           "subtitle": "2X Pizza Roll",
           "icon": "🍕",
-          "image": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773293600/lsq605jzmhjezfweindp.jpg",
+          "image": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773294183/cfm2yjtwpxl59buyj9ab.jpg",
           "originalPrice": 4299,
           "discountedPrice": 798,
           "cardColor": "#ffffff"
