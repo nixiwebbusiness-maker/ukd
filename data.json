@@ -313,7 +313,7 @@
           "name": "Double Pizza Roll",
           "subtitle": "2X Pizza Roll",
           "icon": "🍕",
-          "image": "",
+          "image": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773293600/lsq605jzmhjezfweindp.jpg",
           "originalPrice": 4299,
           "discountedPrice": 798,
           "cardColor": "#c88000"
