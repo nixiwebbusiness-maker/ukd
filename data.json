@@ -45,7 +45,7 @@
   "colors": {
     "primary": "#B8860B",
     "text_white": "#ffffff",
-    "text_regular": "#808080",
+    "text_regular": "#B8860B",
     "shadow": "#cc73f8",
     "nav": "#B8860B",
     "glow": "#B8860B",
