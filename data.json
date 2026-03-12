@@ -1,10 +1,10 @@
 {
-  "brand_name": "ukd",
+  "brand_name": "UKD",
   "favicon": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773294156/o4vwt1bh4dj025na6nq1.png",
   "logo": "",
   "announcement": {
     "enabled": true,
-    "text": "🎉 SALE — Use code SAVE10OFF for 10% off all bookings!",
+    "text": "SALE — Use code SAVE10OFF for 10% off all order!",
     "bg_color": "#cc73f8",
     "text_color": "#ffffff"
   },
@@ -63,7 +63,7 @@
     "buttons": [
       {
         "id": 1,
-        "label": "Order Now",
+        "label": "deals now",
         "link": "#deals",
         "position": "center",
         "style": "filled"
@@ -73,14 +73,14 @@
         "label": "Our Menu",
         "link": "#menu",
         "position": "bottom-right",
-        "style": "outline"
+        "style": "filled"
       },
       {
         "id": 3,
-        "label": "Contact Us",
-        "link": "#footer",
+        "label": "location ",
+        "link": "location",
         "position": "bottom-left",
-        "style": "outline"
+        "style": "filled"
       }
     ]
   },
@@ -189,10 +189,6 @@
         {
           "n": "Milkshake",
           "p": "Rs. 450"
-        },
-        {
-          "n": "gg",
-          "p": "$99"
         }
       ]
     }
@@ -278,11 +274,8 @@
     "deals": "Deals"
   },
   "delivery_cities": [
-    "Karachi",
-    "Lahore",
-    "Islamabad",
-    "Rawalpindi",
-    "Faisalabad"
+    "KAMRA",
+    "ATTOCK"
   ],
   "nav_items": [
     {
@@ -294,6 +287,11 @@
       "id": "nav_1773293213011",
       "label": "menu",
       "section": "menu"
+    },
+    {
+      "id": "nav_1773301652997",
+      "label": "location ",
+      "section": "location"
     }
   ],
   "deals_sections": [
@@ -306,7 +304,7 @@
       "subtitleBg": "#2a2200",
       "subtitleColor": "#c8a200",
       "bannerImage": "",
-      "bannerEmoji": "🍽️",
+      "bannerEmoji": "",
       "deals": [
         {
           "id": 1,
@@ -351,9 +349,9 @@
       ]
     },
     {
-      "id": 1773293295618,
-      "title": "zing deal ",
-      "subtitle": "SECTION",
+      "id": 1773301779828,
+      "title": "zing",
+      "subtitle": "deals",
       "bannerBg": "#1a1400",
       "titleColor": "#c8a200",
       "subtitleBg": "#2a2200",
@@ -362,10 +360,10 @@
       "bannerEmoji": "🍽️",
       "deals": [
         {
-          "id": 1773293326410,
-          "name": "new pr",
-          "subtitle": "jul",
-          "icon": "",
+          "id": 1773301802141,
+          "name": " Double Large",
+          "subtitle": "2 X 12\" Deep Pan",
+          "icon": "🍕",
           "image": "",
           "originalPrice": 999,
           "discountedPrice": 799,
