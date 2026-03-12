@@ -1,5 +1,5 @@
 {
-  "brand_name": "webnixi",
+  "brand_name": "saryo",
   "favicon": "",
   "logo": "",
   "announcement": {
@@ -18,9 +18,27 @@
     "enabled": true,
     "note": "Please complete payment before your appointment.",
     "methods": [
-      { "id": 1, "name": "Cash", "icon": "💵", "detail": "Pay in person at the salon", "enabled": true },
-      { "id": 2, "name": "Card", "icon": "💳", "detail": "Visa / Mastercard accepted", "enabled": true },
-      { "id": 3, "name": "Bank Transfer", "icon": "🏦", "detail": "Account details sent via WhatsApp", "enabled": false }
+      {
+        "id": 1,
+        "name": "Cash",
+        "icon": "💵",
+        "detail": "Pay in person at the salon",
+        "enabled": true
+      },
+      {
+        "id": 2,
+        "name": "Card",
+        "icon": "💳",
+        "detail": "Visa / Mastercard accepted",
+        "enabled": true
+      },
+      {
+        "id": 3,
+        "name": "Bank Transfer",
+        "icon": "🏦",
+        "detail": "Account details sent via WhatsApp",
+        "enabled": false
+      }
     ]
   },
   "cart_icon": "",
@@ -43,62 +61,171 @@
       "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1920&h=1080&fit=crop"
     ],
     "buttons": [
-      { "id": 1, "label": "Order Now", "link": "#deals", "position": "center", "style": "filled" },
-      { "id": 2, "label": "Our Menu", "link": "#menu", "position": "bottom-right", "style": "outline" },
-      { "id": 3, "label": "Contact Us", "link": "#footer", "position": "bottom-left", "style": "outline" }
+      {
+        "id": 1,
+        "label": "Order Now",
+        "link": "#deals",
+        "position": "center",
+        "style": "filled"
+      },
+      {
+        "id": 2,
+        "label": "Our Menu",
+        "link": "#menu",
+        "position": "bottom-right",
+        "style": "outline"
+      },
+      {
+        "id": 3,
+        "label": "Contact Us",
+        "link": "#footer",
+        "position": "bottom-left",
+        "style": "outline"
+      }
     ]
   },
   "about": {
     "text": "Welcome to our sanctuary, where luxury meets tranquility. Our sanctuary offers premium services designed to rejuvenate your mind, body, and soul.",
     "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=1000&fit=crop",
     "stats": [
-      { "value": "150+", "label": "Client Satisfaction" },
-      { "value": "15", "label": "Expert Team" },
-      { "value": "5★", "label": "Avg Rating" }
+      {
+        "value": "150+",
+        "label": "Client Satisfaction"
+      },
+      {
+        "value": "15",
+        "label": "Expert Team"
+      },
+      {
+        "value": "5★",
+        "label": "Avg Rating"
+      }
     ]
   },
   "services": {
     "Spa": [
-      { "name": "Royal Massage", "price": "$150", "desc": "Full body relaxation massage", "img": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=600&fit=crop" },
-      { "name": "Facial Treatment", "price": "$120", "desc": "Premium skincare treatment", "img": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=600&fit=crop" }
+      {
+        "name": "Royal Massage",
+        "price": "$150",
+        "desc": "Full body relaxation massage",
+        "img": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=600&fit=crop"
+      },
+      {
+        "name": "Facial Treatment",
+        "price": "$120",
+        "desc": "Premium skincare treatment",
+        "img": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=600&fit=crop"
+      }
     ],
     "Salon": [
-      { "name": "Hair Styling", "price": "$80", "desc": "Professional hair styling", "img": "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=600&fit=crop" },
-      { "name": "Manicure", "price": "$50", "desc": "Luxury nail care", "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop" }
+      {
+        "name": "Hair Styling",
+        "price": "$80",
+        "desc": "Professional hair styling",
+        "img": "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=600&fit=crop"
+      },
+      {
+        "name": "Manicure",
+        "price": "$50",
+        "desc": "Luxury nail care",
+        "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop"
+      }
     ]
   },
   "full_menu": [
     {
       "cat": "Pizzas",
       "items": [
-        { "n": "Margherita Pizza", "p": "Rs. 850" },
-        { "n": "BBQ Chicken Pizza", "p": "Rs. 1100" },
-        { "n": "Pepperoni Pizza", "p": "Rs. 1200" },
-        { "n": "Veggie Supreme", "p": "Rs. 950" }
+        {
+          "n": "Margherita Pizza",
+          "p": "Rs. 850"
+        },
+        {
+          "n": "BBQ Chicken Pizza",
+          "p": "Rs. 1100"
+        },
+        {
+          "n": "Pepperoni Pizza",
+          "p": "Rs. 1200"
+        },
+        {
+          "n": "Veggie Supreme",
+          "p": "Rs. 950"
+        }
       ]
     },
     {
       "cat": "Burgers",
       "items": [
-        { "n": "Classic Beef Burger", "p": "Rs. 650" },
-        { "n": "Zinger Burger", "p": "Rs. 700" },
-        { "n": "Double Smash Burger", "p": "Rs. 900" }
+        {
+          "n": "Classic Beef Burger",
+          "p": "Rs. 650"
+        },
+        {
+          "n": "Zinger Burger",
+          "p": "Rs. 700"
+        },
+        {
+          "n": "Double Smash Burger",
+          "p": "Rs. 900"
+        }
       ]
     },
     {
       "cat": "Sides & Drinks",
       "items": [
-        { "n": "French Fries", "p": "Rs. 300" },
-        { "n": "Garlic Bread", "p": "Rs. 250" },
-        { "n": "Soft Drink", "p": "Rs. 150" },
-        { "n": "Milkshake", "p": "Rs. 450" }
+        {
+          "n": "French Fries",
+          "p": "Rs. 300"
+        },
+        {
+          "n": "Garlic Bread",
+          "p": "Rs. 250"
+        },
+        {
+          "n": "Soft Drink",
+          "p": "Rs. 150"
+        },
+        {
+          "n": "Milkshake",
+          "p": "Rs. 450"
+        }
       ]
     }
   ],
   "reviews": [
-    { "name": "Sarah Johnson", "text": "Absolutely amazing experience! The staff was so professional.", "rating": 5, "links": [{ "name": "Google Maps", "url": "https://maps.google.com" }, { "name": "Yelp", "url": "https://yelp.com" }] },
-    { "name": "Emily Davis", "text": "Best spa day I've ever had. Highly recommend!", "rating": 5, "links": [] },
-    { "name": "Michael Brown", "text": "Luxurious atmosphere and top-notch service.", "rating": 4, "links": [{ "name": "Google Maps", "url": "https://maps.google.com" }] }
+    {
+      "name": "Sarah Johnson",
+      "text": "Absolutely amazing experience! The staff was so professional.",
+      "rating": 5,
+      "links": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com"
+        },
+        {
+          "name": "Yelp",
+          "url": "https://yelp.com"
+        }
+      ]
+    },
+    {
+      "name": "Emily Davis",
+      "text": "Best spa day I've ever had. Highly recommend!",
+      "rating": 5,
+      "links": []
+    },
+    {
+      "name": "Michael Brown",
+      "text": "Luxurious atmosphere and top-notch service.",
+      "rating": 4,
+      "links": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com"
+        }
+      ]
+    }
   ],
   "gallery": [
     "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=400&h=500&fit=crop",
@@ -112,10 +239,26 @@
     "address": "123 Luxury Lane, Beverly Hills, CA 90210",
     "copyright": "© 2024 webnixi. All rights reserved.",
     "social_links": [
-      { "name": "Yelp", "url": "https://yelp.com", "icon_url": "https://cdn-icons-png.flaticon.com/512/174/174882.png" },
-      { "name": "Instagram", "url": "https://instagram.com", "icon_url": "https://cdn-icons-png.flaticon.com/512/174/174855.png" },
-      { "name": "TikTok", "url": "https://tiktok.com", "icon_url": "https://cdn-icons-png.flaticon.com/512/3046/3046121.png" },
-      { "name": "X", "url": "https://x.com", "icon_url": "https://cdn-icons-png.flaticon.com/512/5968/5968830.png" }
+      {
+        "name": "Yelp",
+        "url": "https://yelp.com",
+        "icon_url": "https://cdn-icons-png.flaticon.com/512/174/174882.png"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com",
+        "icon_url": "https://cdn-icons-png.flaticon.com/512/174/174855.png"
+      },
+      {
+        "name": "TikTok",
+        "url": "https://tiktok.com",
+        "icon_url": "https://cdn-icons-png.flaticon.com/512/3046/3046121.png"
+      },
+      {
+        "name": "X",
+        "url": "https://x.com",
+        "icon_url": "https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
+      }
     ]
   },
   "location_info": {
@@ -130,12 +273,34 @@
     "menu": "The Menu",
     "deals": "Deals"
   },
-  "delivery_cities": ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Faisalabad"],
+  "delivery_cities": [
+    "Karachi",
+    "Lahore",
+    "Islamabad",
+    "Rawalpindi",
+    "Faisalabad"
+  ],
   "nav_items": [
-    { "id": "experience", "label": "Experience", "section": "experience" },
-    { "id": "menu", "label": "Menu", "section": "menu" },
-    { "id": "about", "label": "About", "section": "about" },
-    { "id": "gallery", "label": "Gallery", "section": "gallery" }
+    {
+      "id": "experience",
+      "label": "Experience",
+      "section": "experience"
+    },
+    {
+      "id": "menu",
+      "label": "Menu",
+      "section": "menu"
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "section": "about"
+    },
+    {
+      "id": "gallery",
+      "label": "Gallery",
+      "section": "gallery"
+    }
   ],
   "deals_sections": [
     {
@@ -149,10 +314,46 @@
       "bannerImage": "",
       "bannerEmoji": "🍽️",
       "deals": [
-        { "id": 1, "name": "Double Pizza Roll", "subtitle": "2X Pizza Roll", "icon": "🍕", "image": "", "originalPrice": 4299, "discountedPrice": 798, "cardColor": "#c88000" },
-        { "id": 2, "name": "Double Large", "subtitle": "2 X 12\" Deep Pan", "icon": "🍕", "image": "", "originalPrice": 3499, "discountedPrice": 2499, "cardColor": "#c88000" },
-        { "id": 3, "name": "Double Medium", "subtitle": "2 X 9\" Deep Pan", "icon": "🍕", "image": "", "originalPrice": 2999, "discountedPrice": 1699, "cardColor": "#c88000" },
-        { "id": 4, "name": "Ramzan Deal 1", "subtitle": "21 Slice", "icon": "🍕", "image": "", "originalPrice": 749, "discountedPrice": 649, "cardColor": "#9a1010" }
+        {
+          "id": 1,
+          "name": "Double Pizza Roll",
+          "subtitle": "2X Pizza Roll",
+          "icon": "🍕",
+          "image": "",
+          "originalPrice": 4299,
+          "discountedPrice": 798,
+          "cardColor": "#c88000"
+        },
+        {
+          "id": 2,
+          "name": "Double Large",
+          "subtitle": "2 X 12\" Deep Pan",
+          "icon": "🍕",
+          "image": "",
+          "originalPrice": 3499,
+          "discountedPrice": 2499,
+          "cardColor": "#c88000"
+        },
+        {
+          "id": 3,
+          "name": "Double Medium",
+          "subtitle": "2 X 9\" Deep Pan",
+          "icon": "🍕",
+          "image": "",
+          "originalPrice": 2999,
+          "discountedPrice": 1699,
+          "cardColor": "#c88000"
+        },
+        {
+          "id": 4,
+          "name": "Ramzan Deal 1",
+          "subtitle": "21 Slice",
+          "icon": "🍕",
+          "image": "",
+          "originalPrice": 749,
+          "discountedPrice": 649,
+          "cardColor": "#9a1010"
+        }
       ]
     }
   ]
