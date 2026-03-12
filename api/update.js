@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
         const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
         const REPO_OWNER   = 'nixiwebbusiness-maker';
-        const REPO_NAME    = 'LUMINA-_LUXE';
+        const REPO_NAME    = 'ukd';
         const FILE_PATH    = 'data.json';
         const BRANCH       = 'main';
 
