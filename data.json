@@ -336,6 +336,10 @@
             {
               "name": "Medium",
               "price": 999
+            },
+            {
+              "name": "Large",
+              "price": 1500
             }
           ]
         },
