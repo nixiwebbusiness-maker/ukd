@@ -1,17 +1,22 @@
 {
-  "brand_name": "UKD",
-  "favicon": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773294156/o4vwt1bh4dj025na6nq1.png",
+  "brand_name": "webnixi",
+  "favicon": "",
   "logo": "",
+  "loading_bg": "",
   "announcement": {
     "enabled": true,
-    "text": "10% off all order!",
-    "bg_color": "#B8860B",
-    "text_color": "#1A1A1B"
+    "text": "🎉 SALE — Use code SAVE10OFF for 10% off all bookings!",
+    "bg_color": "#cc73f8",
+    "text_color": "#ffffff"
   },
   "seo": {
     "description": "webnixi – Premium Spa & Salon in Los Angeles. Book luxury hair, massage, facial treatments.",
     "keywords": "webnixi, webnixi los angeles, luxury spa los angeles, premium salon beverly hills, massage los angeles",
-    "location": "Los Angeles, CA"
+    "location": "Los Angeles, CA",
+    "og_title": "webnixi – Luxury Spa & Salon",
+    "og_description": "Experience ultimate luxury at webnixi. Premium spa and salon services in Los Angeles.",
+    "og_image": "",
+    "og_url": "https://webnixi.com"
   },
   "header_scripts": "",
   "payment_options": {
@@ -43,17 +48,17 @@
   },
   "cart_icon": "",
   "colors": {
-    "primary": "#B8860B",
+    "primary": "#cc73f8",
     "text_white": "#ffffff",
-    "text_regular": "#B8860B",
+    "text_regular": "#ffffff60",
     "shadow": "#cc73f8",
-    "nav": "#B8860B",
-    "glow": "#B8860B",
+    "nav": "#cc73f8",
+    "glow": "#cc73f8",
     "brand_name": "#ffffff"
   },
   "hero": {
     "title": "",
-    "subtitle": "",
+    "subtitle": "Experience Ultimate Luxury",
     "images": [
       "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1920&h=1080&fit=crop",
       "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920&h=1080&fit=crop",
@@ -63,10 +68,24 @@
     "buttons": [
       {
         "id": 1,
-        "label": "deals now",
+        "label": "Order Now",
         "link": "#deals",
         "position": "center",
         "style": "filled"
+      },
+      {
+        "id": 2,
+        "label": "Our Menu",
+        "link": "#menu",
+        "position": "bottom-right",
+        "style": "outline"
+      },
+      {
+        "id": 3,
+        "label": "Contact Us",
+        "link": "#footer",
+        "position": "bottom-left",
+        "style": "outline"
       }
     ]
   },
@@ -137,10 +156,6 @@
         {
           "n": "Veggie Supreme",
           "p": "Rs. 950"
-        },
-        {
-          "n": "Double Large",
-          "p": "Rs. 799"
         }
       ]
     },
@@ -226,8 +241,8 @@
   "footer": {
     "whatsapp": "+1234567890",
     "hours": "Mon-Sun: 9AM - 9PM",
-    "address": "attock city",
-    "copyright": "© 2026 ukd. All rights reserved.",
+    "address": "123 Luxury Lane, Beverly Hills, CA 90210",
+    "copyright": "© 2024 webnixi. All rights reserved.",
     "social_links": [
       {
         "name": "Yelp",
@@ -254,34 +269,42 @@
   "location_info": {
     "enabled": true,
     "title": "Location Info",
-    "description": "welcoming environment. We can't wait to see you!",
-    "address": "attock city",
+    "description": "Visit us for expert beauty services in a clean, modern, and welcoming environment. We can't wait to see you!",
+    "address": "123 Beauty Lane, City",
     "hours": "Mon-Sat 9am",
-    "map_query": "attock city "
+    "map_query": "123 Beauty Lane, Beverly Hills, CA"
   },
   "section_titles": {
     "menu": "The Menu",
     "deals": "Deals"
   },
   "delivery_cities": [
-    "KAMRA",
-    "ATTOCK"
+    "Karachi",
+    "Lahore",
+    "Islamabad",
+    "Rawalpindi",
+    "Faisalabad"
   ],
   "nav_items": [
     {
-      "id": "nav_1773293212699",
-      "label": "deals",
-      "section": "deals"
+      "id": "experience",
+      "label": "Experience",
+      "section": "experience"
     },
     {
-      "id": "nav_1773293213011",
-      "label": "menu",
+      "id": "menu",
+      "label": "Menu",
       "section": "menu"
     },
     {
-      "id": "nav_1773301652997",
-      "label": "location ",
-      "section": "location"
+      "id": "about",
+      "label": "About",
+      "section": "about"
+    },
+    {
+      "id": "gallery",
+      "label": "Gallery",
+      "section": "gallery"
     }
   ],
   "deals_sections": [
@@ -289,12 +312,12 @@
       "id": 1,
       "title": "RAMZAN",
       "subtitle": "DEALS",
-      "bannerBg": "#272525",
+      "bannerBg": "#1a1400",
       "titleColor": "#c8a200",
-      "subtitleBg": "#272525",
+      "subtitleBg": "#2a2200",
       "subtitleColor": "#c8a200",
-      "bannerImage": "https://res.cloudinary.com/dgoc9andq/image/upload/v1773469750/ay1zcxb1chtteyavz7z6.png",
-      "bannerEmoji": "",
+      "bannerImage": "",
+      "bannerEmoji": "🍽️",
       "deals": [
         {
           "id": 1,
@@ -304,15 +327,15 @@
           "image": "",
           "originalPrice": 4299,
           "discountedPrice": 798,
-          "cardColor": "#ffffff",
-          "flavors": [
+          "cardColor": "#c88000",
+          "sizes": [
             {
-              "name": "fav",
-              "desc": "hhhu"
+              "name": "Regular",
+              "price": 798
             },
             {
-              "name": "pav",
-              "desc": "gggu"
+              "name": "Medium",
+              "price": 999
             }
           ]
         },
@@ -345,29 +368,6 @@
           "originalPrice": 749,
           "discountedPrice": 649,
           "cardColor": "#9a1010"
-        }
-      ]
-    },
-    {
-      "id": 1773301779828,
-      "title": "zing",
-      "subtitle": "deals",
-      "bannerBg": "#272525",
-      "titleColor": "#c8a200",
-      "subtitleBg": "#272525",
-      "subtitleColor": "#c8a200",
-      "bannerImage": "",
-      "bannerEmoji": "🍽️",
-      "deals": [
-        {
-          "id": 1773301802141,
-          "name": " Double Large",
-          "subtitle": "2 X 12\" Deep Pan",
-          "icon": "🍕",
-          "image": "",
-          "originalPrice": 999,
-          "discountedPrice": 799,
-          "cardColor": "#c88000"
         }
       ]
     }
