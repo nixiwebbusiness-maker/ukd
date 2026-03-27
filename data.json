@@ -59,10 +59,10 @@
   "light_colors": {
     "primary": "#000000",
     "text_white": "#000000",
-    "text_regular": "#cc73f8",
+    "text_regular": "#000000",
     "shadow": "#a855f7",
-    "nav": "#a855f7",
-    "glow": "#a855f7",
+    "nav": "#000000",
+    "glow": "#000000",
     "brand_name": "#000000",
     "bg": ""
   },
