@@ -53,17 +53,17 @@
     "text_regular": "#ffffff60",
     "shadow": "#cc73f8",
     "nav": "#cc73f8",
-    "glow": "#cc73f8",
+    "glow": "#D0FF71",
     "brand_name": "#ffffff"
   },
   "light_colors": {
     "primary": "#a855f7",
-    "text_white": "#111111",
+    "text_white": "#000000",
     "text_regular": "#cc73f8",
     "shadow": "#a855f7",
     "nav": "#a855f7",
     "glow": "#a855f7",
-    "brand_name": "#111111",
+    "brand_name": "#000000",
     "bg": ""
   },
   "hero": {
